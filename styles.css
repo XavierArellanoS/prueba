@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#time {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#location {
+    font-size: 18px;
+    color: #666;
+}
