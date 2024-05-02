@@ -21,7 +21,7 @@ function updateTime() {
     hours = (hours == 0) ? 12 : hours;
 
     // Construir la cadena de tiempo
-    var timeString = hours + ":" + minutes + ":" + seconds + " " + amPM;
+    var timeString = "La hora actual es:" + hours + ":" + minutes + ":" + seconds + " " + amPM;
     timeElement.textContent = timeString;
 }
 
@@ -32,7 +32,7 @@ function updateLocation() {
         navigator.geolocation.getCurrentPosition(function(position) {
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
-            locationElement.textContent = "Latitude: " + latitude + ", Longitude: " + longitude;
+            locationElement.textContent = "Usted está ubicado en: Latitud: " + latitude + ", y, Longitud: " + longitude;
         });
     } else {
         locationElement.textContent = "Geolocation is not supported by this browser.";
