@@ -32,7 +32,7 @@ function updateLocation() {
         navigator.geolocation.getCurrentPosition(function(position) {
             var latitude = position.coords.latitude;
             var longitude = position.coords.longitude;
-            locationElement.textContent = "Usted está ubicado en: Latitud: " + latitude + ", y, Longitud: " + longitude;
+            locationElement.textContent = "Usted esta ubicado en: Latitud: " + latitude + ", y, Longitud: " + longitude;
         });
     } else {
         locationElement.textContent = "Geolocation is not supported by this browser.";
